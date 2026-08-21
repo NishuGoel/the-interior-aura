@@ -10,7 +10,6 @@ const dict: Record<Lang, Record<string, string>> = {
 	de: {
 		'nav.collections': 'Kollektionen',
 		'nav.atelier': 'Das Atelier',
-		'nav.heritage': 'Erbe',
 		'nav.enquire': 'Anfragen',
 		'hero.eyebrow': 'Oberflächen für Innenräume · Atelier seit 2022',
 		'hero.h1.pre': 'Jeder Raum hat',
