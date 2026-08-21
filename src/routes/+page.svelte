@@ -9,7 +9,7 @@
 	<title>The Interior Aura — Surfaces, considered</title>
 	<meta
 		name="description"
-		content="The Interior Aura — interior surfaces, considered. Flooring, walls, ceilings, light and soft layers, sourced and crafted by hand in India."
+		content="The Interior Aura — interior surfaces, considered. Flooring, walls, ceilings and soft layers, sourced and crafted by hand in India."
 	/>
 </svelte:head>
 
@@ -28,7 +28,7 @@
 				<p class="lede">
 					{$t(
 						'hero.lede',
-						"We make the surfaces that hold it — flooring, walls, ceilings, light and the soft layer — sourced and crafted by hand in India, finished to the standard of the world's most considered interiors."
+						"We make the surfaces that hold it — flooring, walls, ceilings and the soft layer — sourced and crafted by hand in India, finished to the standard of the world's most considered interiors."
 					)}
 				</p>
 				<div class="hero-actions">
@@ -87,7 +87,7 @@
 			<p class="intro-p">
 				{$t(
 					'rooms.intro',
-					'A considered interior is built outward in layers — the plane underfoot, the walls that frame it, the ceiling few think to dress, the light that moves through it, and the softness that makes it a home. We make each one, so the layers meet rather than merely coexist.'
+					'A considered interior is built outward in layers — the plane underfoot, the walls that frame it, the ceiling few think to dress, and the softness that makes it a home. We make each one, so the layers meet rather than merely coexist.'
 				)}
 			</p>
 		</div>
@@ -193,7 +193,7 @@
 			<div use:reveal>
 				<div class="plate">
 					<div class="scene scene-warm" aria-hidden="true"></div>
-					<span class="plno">{$t('at.pl', 'Pl. 07 — The Atelier, Gurugram')}</span>
+					<span class="plno">{$t('at.pl', 'Pl. 06 — The Atelier, Gurugram')}</span>
 					<span class="cap">{$t('at.cap', 'Where surfaces are sourced and finished by hand.')}</span>
 				</div>
 			</div>

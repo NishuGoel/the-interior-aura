@@ -34,7 +34,7 @@
 			<div use:reveal>
 				<div class="plate">
 					<div class="scene scene-warm" aria-hidden="true"></div>
-					<span class="plno">{$t('at.pl', 'Pl. 07 — The Atelier, Gurugram')}</span>
+					<span class="plno">{$t('at.pl', 'Pl. 06 — The Atelier, Gurugram')}</span>
 					<span class="cap">{$t('at.cap', 'Where surfaces are sourced and finished by hand.')}</span>
 				</div>
 			</div>
@@ -47,13 +47,13 @@
 					)}
 				</p>
 				<p>
-					Established in {company.established} as a wholesale house for flooring, walls, ceilings,
-					light and soft layers, we serve {company.serviceAreas.join(', ')} — with samples brought
+					Established in {company.established} as a wholesale house for flooring, walls, ceilings
+					and soft layers, we serve {company.serviceAreas.join(', ')} — with samples brought
 					to your door, and every fit finished by our own hands.
 				</p>
 				<div class="marks">
 					<div class="m"><div class="k">2022</div><div class="l">{$t('at.m1', 'Atelier established')}</div></div>
-					<div class="m"><div class="k">5</div><div class="l">{$t('at.m2', 'Surface collections')}</div></div>
+					<div class="m"><div class="k">4</div><div class="l">{$t('at.m2', 'Surface collections')}</div></div>
 					<div class="m"><div class="k">∞</div><div class="l">{$t('at.m3', 'Bespoke, on request')}</div></div>
 				</div>
 			</div>

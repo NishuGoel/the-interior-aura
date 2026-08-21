@@ -15,9 +15,6 @@ Expected filenames (from `src/lib/data/company.ts`):
 ## Ceilings
 - `pvc-ceiling.jpg`, `wpc-ceiling.jpg`, `false-ceiling.jpg`, `ceiling-grid.jpg`
 
-## Light & Glass
-- `roller-blinds.jpg`, `zebra-blinds.jpg`, `venetian-blinds.jpg`, `glass-film.jpg`
-
 ## Carpets & Textiles
 - `carpet-mats.jpg`, `printed-carpet.jpg`, `carpet-tiles.jpg`, `polypropylene.jpg`
 

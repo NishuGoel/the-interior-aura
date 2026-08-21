@@ -6,7 +6,7 @@ export const company = {
 	name: 'The Interior Aura',
 	tagline: 'Surfaces, considered',
 	description:
-		'Interior surfaces, considered — flooring, walls, ceilings, light and soft layers, sourced and crafted by hand in India.',
+		'Interior surfaces, considered — flooring, walls, ceilings and soft layers, sourced and crafted by hand in India.',
 	established: 2022,
 	address: {
 		line1: '820/28, Jyoti Park, Gali No. 13',
@@ -191,55 +191,11 @@ export const collections: Collection[] = [
 		]
 	},
 	{
-		slug: 'light-glass',
-		title: 'Light & Glass',
-		shortTitle: 'Light & glass',
-		layerNo: 'Layer iv',
-		plate: 'Pl. 05 — Light & Glass',
-		term: '— light, filtered',
-		description:
-			'How a room breathes. We shape the daylight — softening, screening, framing it — so the surfaces beneath are seen at their best.',
-		kinds:
-			'Roller, zebra, venetian & wooden blinds · sun-control, frosted & decorative glass film · window films',
-		scene: 'scene-stone',
-		darkPlate: false,
-		products: [
-			{
-				name: 'Roller blinds',
-				description: 'Blackout, sunscreen and translucent fabrics, cut to the window.',
-				image: '/images/roller-blinds.jpg',
-				price: 'from ₹90',
-				unit: 'sq ft'
-			},
-			{
-				name: 'Zebra & dual blinds',
-				description: 'Alternating sheer and opaque bands — light you can tune by hand.',
-				image: '/images/zebra-blinds.jpg',
-				price: 'from ₹140',
-				unit: 'sq ft'
-			},
-			{
-				name: 'Venetian & wooden blinds',
-				description: 'Aluminium and timber slats for precise, warm light control.',
-				image: '/images/venetian-blinds.jpg',
-				price: 'from ₹150',
-				unit: 'sq ft'
-			},
-			{
-				name: 'Sun-control & frosted film',
-				description: 'Garware sun films, frosted and decorative glass films, fitted in place.',
-				image: '/images/glass-film.jpg',
-				price: 'from ₹45',
-				unit: 'sq ft'
-			}
-		]
-	},
-	{
 		slug: 'carpets',
 		title: 'Carpets & Textiles',
 		shortTitle: 'Carpets',
-		layerNo: 'Layer v',
-		plate: 'Pl. 06 — Carpets & Textiles',
+		layerNo: 'Layer iv',
+		plate: 'Pl. 05 — Carpets & Textiles',
 		term: '— the soft layer',
 		description:
 			'The final layer, and the one you feel. Warmth, hush and texture that turn a finished room into a lived-in one.',
