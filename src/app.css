@@ -157,17 +157,17 @@ nav.main a:hover {
 nav.main a:hover::after {
 	width: 100%;
 }
-.nav-cta {
+nav.main a.nav-cta {
 	border: 1px solid var(--line);
-	color: var(--bronze) !important;
+	color: var(--bronze);
 	padding: 10px 20px;
 }
-.nav-cta::after {
+nav.main a.nav-cta::after {
 	display: none;
 }
-.nav-cta:hover {
+nav.main a.nav-cta:hover {
 	background: var(--bronze);
-	color: var(--ink) !important;
+	color: var(--ink);
 }
 
 /* language toggle */
@@ -513,12 +513,10 @@ nav.main a:hover::after {
 .section.plaster h3 {
 	color: var(--clay);
 }
-.statement {
-	max-width: 21ch;
-}
 .statement h2 {
-	font-size: clamp(38px, 5.2vw, 76px);
+	font-size: clamp(34px, 4.2vw, 58px);
 	font-weight: 300;
+	max-width: 16ch;
 }
 .section .intro-p {
 	max-width: 46ch;
@@ -543,9 +541,9 @@ nav.main a:hover::after {
 /* collection entries */
 .layers-head {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1.1fr 0.9fr;
 	gap: 56px;
-	align-items: end;
+	align-items: center;
 	margin-bottom: 120px;
 }
 .entry {
