@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Page not found — The Interior Aura</title>
+		<meta name="robots" content="noindex" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,400&family=Hanken+Grotesk:wght@300;500&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			body {
+				margin: 0;
+				min-height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: #1e1813;
+				color: #e8e0d1;
+				font-family: 'Hanken Grotesk', system-ui, sans-serif;
+				font-weight: 300;
+				text-align: center;
+				padding: 24px;
+				box-sizing: border-box;
+			}
+			.eyebrow {
+				font-size: 11px;
+				letter-spacing: 0.36em;
+				text-transform: uppercase;
+				color: #a98a52;
+			}
+			h1 {
+				font-family: 'Fraunces', Georgia, serif;
+				font-weight: 300;
+				font-size: clamp(34px, 7vw, 64px);
+				line-height: 1.1;
+				margin: 20px 0 16px;
+			}
+			h1 em {
+				font-style: italic;
+				color: #a98a52;
+				font-weight: 400;
+			}
+			p {
+				color: rgba(232, 224, 209, 0.62);
+				max-width: 44ch;
+				margin: 0 auto 36px;
+			}
+			a.btn {
+				display: inline-block;
+				font-size: 12px;
+				letter-spacing: 0.18em;
+				text-transform: uppercase;
+				padding: 15px 30px;
+				background: #a98a52;
+				color: #1e1813;
+				text-decoration: none;
+				transition: background 0.3s;
+			}
+			a.btn:hover {
+				background: #e8e0d1;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<span class="eyebrow">404 · Page not found</span>
+			<h1>This room has been <em>rearranged</em>.</h1>
+			<p>
+				The page you were looking for no longer exists — the collections are composed anew from
+				time to time. Everything we make is one step from the entrance.
+			</p>
+			<a class="btn" id="home" href="/">Return to the house</a>
+		</main>
+		<script>
+			// On a GitHub Pages project site the home page lives under the first
+			// path segment; on a root domain it is simply "/".
+			(function () {
+				var seg = location.pathname.split('/')[1];
+				if (seg && seg !== 'collections' && seg !== 'atelier' && seg !== 'enquire') {
+					document.getElementById('home').href = '/' + seg + '/';
+				}
+			})();
+		</script>
+	</body>
+</html>

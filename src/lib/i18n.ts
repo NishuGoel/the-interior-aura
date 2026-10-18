@@ -97,8 +97,6 @@ const dict: Record<Lang, Record<string, string>> = {
 		'form.loc2': 'Europa',
 		'form.loc3': 'Anderswo',
 		'form.interest': 'Interesse an',
-		'form.int.heritage': 'Heritage-Edition / Maßanfertigung',
-		'form.int.trade': 'Handel & Projekte',
 		'form.about': 'Über den Raum',
 		'form.ph': 'Raum, ungefähre Größe, das gewünschte Gefühl, ein etwaiger Termin …',
 		'form.send': 'Anfrage senden',

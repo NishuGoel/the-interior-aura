@@ -105,8 +105,6 @@
 							{#each collections as c}
 								<option value={c.title}>{$t(`col.${c.slug}.title`, c.title)}</option>
 							{/each}
-							<option value="Heritage / bespoke">{$t('form.int.heritage', 'The Heritage Edit / bespoke')}</option>
-							<option value="Trade & projects">{$t('form.int.trade', 'Trade & projects')}</option>
 						</select>
 					</div>
 					<div class="field">
