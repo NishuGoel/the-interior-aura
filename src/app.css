@@ -770,9 +770,12 @@ form.enquiry {
 	color: var(--clay);
 	padding: 14px 16px;
 	font-family: var(--sans);
-	font-size: 15px;
+	/* 16px minimum: anything smaller makes iOS Safari zoom in on focus */
+	font-size: 16px;
 	transition: border-color 0.3s;
 	border-radius: 0;
+	width: 100%;
+	box-sizing: border-box;
 }
 .field input:focus,
 .field select:focus,

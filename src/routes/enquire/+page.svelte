@@ -6,7 +6,7 @@
 	let phone = $state('');
 	let email = $state('');
 	let region = $state('India');
-	let interest = $state('');
+	let interest = $state(collections[0].title);
 	let message = $state('');
 	let sent = $state('');
 
