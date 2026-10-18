@@ -6,7 +6,7 @@ export const company = {
 	name: 'The Interior Aura',
 	tagline: 'Surfaces, considered',
 	description:
-		'Interior surfaces, considered — flooring, walls, ceilings, light and soft layers, sourced and crafted by hand in India.',
+		'Interior surfaces, considered — flooring, walls, ceilings and soft layers, sourced and crafted by hand in India.',
 	established: 2022,
 	address: {
 		line1: '820/28, Jyoti Park, Gali No. 13',
@@ -183,56 +183,11 @@ export const collections: Collection[] = [
 		]
 	},
 	{
-		slug: 'light-glass',
-		title: 'Light & Glass',
-		shortTitle: 'Light & glass',
-		layerNo: 'Layer iv',
-		plate: 'Pl. 05 — Light & Glass',
-		image: '/images/plate-light.jpg',
-		term: '— light, filtered',
-		description:
-			'How a room breathes. We shape the daylight — softening, screening, framing it — so the surfaces beneath are seen at their best.',
-		kinds:
-			'Roller, zebra, venetian & wooden blinds · sheers & motorised drapery · sun-control, frosted & decorative glass film',
-		scene: 'scene-stone',
-		darkPlate: false,
-		products: [
-			{
-				name: 'Roller blinds',
-				description: 'Blackout, sunscreen and translucent fabrics, cut to the window.',
-				image: '/images/blinds-roller.jpg',
-				price: 'from ₹90',
-				unit: 'sq ft'
-			},
-			{
-				name: 'Sheers & motorised drapery',
-				description: 'Wave sheers and drapes on silent, remote-driven tracks.',
-				image: '/images/drapery.jpg',
-				price: 'from ₹150',
-				unit: 'sq ft'
-			},
-			{
-				name: 'Frosted & decorative film',
-				description: 'Frosted, patterned and sun-control films, fitted in place.',
-				image: '/images/film-frosted.jpg',
-				price: 'from ₹45',
-				unit: 'sq ft'
-			},
-			{
-				name: 'Custom-branded glass film',
-				description: 'Your mark or pattern, cut and set into office and storefront glass.',
-				image: '/images/film-custom.jpg',
-				price: 'from ₹65',
-				unit: 'sq ft'
-			}
-		]
-	},
-	{
 		slug: 'carpets',
 		title: 'Carpets & Textiles',
 		shortTitle: 'Carpets',
-		layerNo: 'Layer v',
-		plate: 'Pl. 06 — Carpets & Textiles',
+		layerNo: 'Layer iv',
+		plate: 'Pl. 05 — Carpets & Textiles',
 		image: '/images/plate-carpets.jpg',
 		term: '— the soft layer',
 		description:

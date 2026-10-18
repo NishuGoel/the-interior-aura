@@ -2,8 +2,8 @@
 
 "Surfaces, considered." A SvelteKit + Tailwind site for The Interior Aura, an
 interior-surfaces atelier in Gurugram, India — dark editorial design (ink,
-limewash and bronze; Fraunces + Hanken Grotesk), structured around five surface
-collections: Flooring, Walls, Ceilings, Light & Glass, Carpets & Textiles.
+limewash and bronze; Fraunces + Hanken Grotesk), structured around four surface
+collections: Flooring, Walls, Ceilings, Carpets & Textiles.
 
 ## Tech stack
 

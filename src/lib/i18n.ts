@@ -16,7 +16,7 @@ const dict: Record<Lang, Record<string, string>> = {
 		'hero.h1.pre': 'Jeder Raum hat',
 		'hero.h1.em': 'eine Aura.',
 		'hero.lede':
-			'Wir fertigen die Oberflächen, die sie tragen — Boden, Wände, Decken, Licht und die weiche Schicht. Von Hand in Indien gefertigt, veredelt nach dem Maßstab der durchdachtesten Interieurs der Welt.',
+			'Wir fertigen die Oberflächen, die sie tragen — Boden, Wände, Decken und die weiche Schicht. Von Hand in Indien gefertigt, veredelt nach dem Maßstab der durchdachtesten Interieurs der Welt.',
 		'hero.cta1': 'Kollektionen ansehen',
 		'hero.cta2': 'Beratung vereinbaren',
 		'hero.cap': 'Ein Raum, ganz komponiert — vom Boden bis zur Decke.',
@@ -31,7 +31,7 @@ const dict: Record<Lang, Record<string, string>> = {
 		'rooms.eyebrow': 'Die Anatomie eines Raumes',
 		'rooms.h2': 'Ein Raum wird komponiert, nicht dekoriert.',
 		'rooms.intro':
-			'Ein durchdachtes Interieur entsteht in Schichten — die Fläche unter den Füßen, die Wände, die sie rahmen, die Decke, an die kaum jemand denkt, das Licht, das ihn durchquert, und die Weichheit, die ihn zum Zuhause macht. Wir fertigen jede einzelne — damit die Schichten sich treffen, statt nur nebeneinander zu bestehen.',
+			'Ein durchdachtes Interieur entsteht in Schichten — die Fläche unter den Füßen, die Wände, die sie rahmen, die Decke, an die kaum jemand denkt, und die Weichheit, die ihn zum Zuhause macht. Wir fertigen jede einzelne — damit die Schichten sich treffen, statt nur nebeneinander zu bestehen.',
 		'col.flooring.title': 'Böden',
 		'col.flooring.term': '— unter den Füßen',
 		'col.flooring.desc':
@@ -53,13 +53,6 @@ const dict: Record<Lang, Record<string, string>> = {
 		'col.ceilings.kinds':
 			'PVC- & WPC-Deckenpaneele · dekorative abgehängte Decken · Rastersysteme · gestaltete Deckenarbeiten',
 		'col.ceilings.more': 'Decken entdecken',
-		'col.light-glass.title': 'Licht & Glas',
-		'col.light-glass.term': '— gefiltertes Licht',
-		'col.light-glass.desc':
-			'Wie ein Raum atmet. Wir formen das Tageslicht — wir mildern, beschatten und rahmen es — damit die Oberflächen darunter im besten Licht erscheinen.',
-		'col.light-glass.kinds':
-			'Roll-, Zebra-, Jalousie- & Holzrollos · Sonnenschutz-, Milchglas- & Dekorfolien · Fensterfolien',
-		'col.light-glass.more': 'Licht & Glas entdecken',
 		'col.carpets.title': 'Teppiche & Textilien',
 		'col.carpets.short': 'Teppiche',
 		'col.carpets.term': '— die weiche Schicht',
@@ -68,7 +61,7 @@ const dict: Record<Lang, Record<string, string>> = {
 		'col.carpets.kinds':
 			'Designer- & bedruckte Teppiche · modulare Teppichfliesen · Auslegeware · handgewebte Bodenstücke',
 		'col.carpets.more': 'Teppiche entdecken',
-		'at.pl': 'Pl. 07 — Das Atelier, Gurugram',
+		'at.pl': 'Pl. 06 — Das Atelier, Gurugram',
 		'at.cap': 'Wo Oberflächen von Hand beschafft und veredelt werden.',
 		'at.eyebrow': 'Das Atelier · Gurugram, Indien',
 		'at.h2.1': 'Von Hand gefertigt —',
