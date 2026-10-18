@@ -33,7 +33,7 @@
 	<title>Enquire — The Interior Aura</title>
 	<meta
 		name="description"
-		content="Begin with a conversation — samples, guidance and an honest estimate for flooring, walls, ceilings and soft layers."
+		content="Begin with a conversation — samples, guidance and an honest estimate for flooring, walls, ceilings, light and soft layers."
 	/>
 </svelte:head>
 

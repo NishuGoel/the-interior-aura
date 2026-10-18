@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { collections } from '$lib/data/company';
+	import { collections, heroImage, atelierImage } from '$lib/data/company';
 	import { t } from '$lib/i18n';
 	import { reveal } from '$lib/actions/reveal';
 </script>
@@ -9,7 +9,7 @@
 	<title>The Interior Aura — Surfaces, considered</title>
 	<meta
 		name="description"
-		content="The Interior Aura — interior surfaces, considered. Flooring, walls, ceilings and soft layers, sourced and crafted by hand in India."
+		content="The Interior Aura — interior surfaces, considered. Flooring, walls, ceilings, light and soft layers, sourced and crafted by hand in India."
 	/>
 </svelte:head>
 
@@ -28,7 +28,7 @@
 				<p class="lede">
 					{$t(
 						'hero.lede',
-						"We make the surfaces that hold it — flooring, walls, ceilings and the soft layer — sourced and crafted by hand in India, finished to the standard of the world's most considered interiors."
+						"We make the surfaces that hold it — flooring, walls, ceilings, light and the soft layer — sourced and crafted by hand in India, finished to the standard of the world's most considered interiors."
 					)}
 				</p>
 				<div class="hero-actions">
@@ -38,7 +38,8 @@
 			</div>
 			<div use:reveal>
 				<div class="plate">
-					<div class="scene scene-hero" aria-hidden="true"></div>
+					<img class="scene" src="{base}{heroImage}" alt="A composed interior by The Interior Aura" />
+					<div class="shade" aria-hidden="true"></div>
 					<span class="plno">Pl. 01</span>
 					<span class="cap">{$t('hero.cap', 'A room composed in full — floor to ceiling.')}</span>
 				</div>
@@ -87,7 +88,7 @@
 			<p class="intro-p">
 				{$t(
 					'rooms.intro',
-					'A considered interior is built outward in layers — the plane underfoot, the walls that frame it, the ceiling few think to dress, and the softness that makes it a home. We make each one, so the layers meet rather than merely coexist.'
+					'A considered interior is built outward in layers — the plane underfoot, the walls that frame it, the ceiling few think to dress, the light that moves through it, and the softness that makes it a home. We make each one, so the layers meet rather than merely coexist.'
 				)}
 			</p>
 		</div>
@@ -96,8 +97,9 @@
 			<article class="entry {i % 2 === 1 ? 'flip' : ''}" use:reveal>
 				<div class="entry-media">
 					<div class="plate">
-						<div class="scene {c.scene}" aria-hidden="true"></div>
-						<span class="plno {c.darkPlate ? '' : 'on-light'}">{c.plate}</span>
+						<img class="scene" src="{base}{c.image}" alt={c.title} loading="lazy" />
+						<div class="shade" aria-hidden="true"></div>
+						<span class="plno">{c.plate}</span>
 					</div>
 				</div>
 				<div class="entry-body">
@@ -192,8 +194,9 @@
 		<div class="atelier-grid">
 			<div use:reveal>
 				<div class="plate">
-					<div class="scene scene-warm" aria-hidden="true"></div>
-					<span class="plno">{$t('at.pl', 'Pl. 06 — The Atelier, Gurugram')}</span>
+					<img class="scene" src="{base}{atelierImage}" alt="Carpet being fitted by The Interior Aura team" loading="lazy" />
+					<div class="shade" aria-hidden="true"></div>
+					<span class="plno">{$t('at.pl', 'Pl. 07 — The Atelier, Gurugram')}</span>
 					<span class="cap">{$t('at.cap', 'Where surfaces are sourced and finished by hand.')}</span>
 				</div>
 			</div>

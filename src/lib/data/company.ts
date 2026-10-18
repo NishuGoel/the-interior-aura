@@ -6,7 +6,7 @@ export const company = {
 	name: 'The Interior Aura',
 	tagline: 'Surfaces, considered',
 	description:
-		'Interior surfaces, considered — flooring, walls, ceilings and soft layers, sourced and crafted by hand in India.',
+		'Interior surfaces, considered — flooring, walls, ceilings, light and soft layers, sourced and crafted by hand in India.',
 	established: 2022,
 	address: {
 		line1: '820/28, Jyoti Park, Gali No. 13',
@@ -38,6 +38,8 @@ export interface Collection {
 	shortTitle: string;
 	layerNo: string;
 	plate: string;
+	/** Photograph shown in this collection's plate on the home and overview pages. */
+	image: string;
 	term: string;
 	description: string;
 	kinds: string;
@@ -53,6 +55,7 @@ export const collections: Collection[] = [
 		shortTitle: 'Flooring',
 		layerNo: 'Layer i',
 		plate: 'Pl. 02 — Flooring',
+		image: '/images/plate-flooring.jpg',
 		term: '— underfoot',
 		description:
 			'The plane you live on, and the one a room is judged by first. Warm, quiet, and built to last a generation.',
@@ -80,7 +83,7 @@ export const collections: Collection[] = [
 				name: 'SPC stone-composite',
 				description:
 					'Fully waterproof stone-polymer planks with a click-lock fit. Warm underfoot, calm to live with.',
-				image: '/images/spc-wooden.jpg',
+				image: '/images/spc.jpg',
 				price: 'from ₹90',
 				unit: 'sq ft'
 			},
@@ -94,7 +97,7 @@ export const collections: Collection[] = [
 			},
 			{
 				name: 'Deck flooring',
-				description: 'Weathered-in wood decking for balconies, terraces and open air.',
+				description: 'Weathered-in composite decking for balconies, terraces and open air.',
 				image: '/images/deck.jpg',
 				price: 'from ₹180',
 				unit: 'sq ft'
@@ -107,6 +110,7 @@ export const collections: Collection[] = [
 		shortTitle: 'Walls & wallpaper',
 		layerNo: 'Layer ii',
 		plate: 'Pl. 03 — Walls',
+		image: '/images/plate-walls.jpg',
 		term: '— the vertical plane',
 		description:
 			'Where a room finds its character. From the barely-there to the unmistakably ornate, made to your wall and your mood.',
@@ -118,15 +122,15 @@ export const collections: Collection[] = [
 			{
 				name: 'Designer wallpaper',
 				description:
-					'Brand and imported papers — floral, geometric, jewel-toned. Washable, long-lived.',
-				image: '/images/pvc-wallpaper.jpg',
+					'Brand and imported papers — botanical, geometric, jewel-toned. Washable, long-lived.',
+				image: '/images/wallpaper-designer.jpg',
 				price: 'from ₹1,500',
 				unit: 'roll'
 			},
 			{
-				name: 'Custom-printed wallpaper',
+				name: 'Custom-printed murals',
 				description: 'Your artwork, photograph or pattern, printed to the exact wall.',
-				image: '/images/custom-wallpaper.jpg',
+				image: '/images/wallpaper-custom.jpg',
 				price: 'from ₹80',
 				unit: 'sq ft'
 			},
@@ -134,14 +138,14 @@ export const collections: Collection[] = [
 				name: 'PVC & WPC panelling',
 				description:
 					'Fluted, louvered and wood-grain panels — moisture-proof and made to meet cleanly.',
-				image: '/images/pvc-panels.jpg',
+				image: '/images/panelling.jpg',
 				price: 'from ₹60',
 				unit: 'sq ft'
 			},
 			{
 				name: 'HD & vinyl-backed paper',
-				description: 'Heavy-duty papers for commercial walls and high-touch rooms.',
-				image: '/images/hd-wallpaper.jpg',
+				description: 'Heavy-duty textured papers for commercial walls and high-touch rooms.',
+				image: '/images/wallpaper-hd.jpg',
 				price: 'from ₹2,200',
 				unit: 'roll'
 			}
@@ -153,6 +157,7 @@ export const collections: Collection[] = [
 		shortTitle: 'Ceilings',
 		layerNo: 'Layer iii',
 		plate: 'Pl. 04 — Ceilings',
+		image: '/images/plate-ceilings.jpg',
 		term: '— the fifth wall',
 		description:
 			'The surface most rooms forget. Dressed well, it is the difference between a space and a setting.',
@@ -161,31 +166,63 @@ export const collections: Collection[] = [
 		darkPlate: true,
 		products: [
 			{
-				name: 'PVC ceiling panels',
-				description: 'Clean-lined, moisture-proof panels for kitchens, baths and verandas.',
-				image: '/images/pvc-ceiling.jpg',
-				price: 'from ₹65',
-				unit: 'sq ft'
-			},
-			{
-				name: 'WPC ceiling panels',
-				description: 'Warm wood-composite ceilings with the depth of timber.',
-				image: '/images/wpc-ceiling.jpg',
-				price: 'from ₹150',
-				unit: 'sq ft'
-			},
-			{
 				name: 'Decorative false ceilings',
 				description: 'Coves, trays and shadow lines — the quiet architecture overhead.',
-				image: '/images/false-ceiling.jpg',
+				image: '/images/ceiling-false.jpg',
 				price: 'from ₹85',
 				unit: 'sq ft'
 			},
 			{
-				name: 'Grid systems',
-				description: 'Practical grid and tile ceilings for offices and commercial rooms.',
-				image: '/images/ceiling-grid.jpg',
-				price: 'from ₹55',
+				name: 'Feature & cove work',
+				description:
+					'Timber-lined coves and sculpted features, drawn to the room and lit from within.',
+				image: '/images/ceiling-feature.jpg',
+				price: 'from ₹120',
+				unit: 'sq ft'
+			}
+		]
+	},
+	{
+		slug: 'light-glass',
+		title: 'Light & Glass',
+		shortTitle: 'Light & glass',
+		layerNo: 'Layer iv',
+		plate: 'Pl. 05 — Light & Glass',
+		image: '/images/plate-light.jpg',
+		term: '— light, filtered',
+		description:
+			'How a room breathes. We shape the daylight — softening, screening, framing it — so the surfaces beneath are seen at their best.',
+		kinds:
+			'Roller, zebra, venetian & wooden blinds · sheers & motorised drapery · sun-control, frosted & decorative glass film',
+		scene: 'scene-stone',
+		darkPlate: false,
+		products: [
+			{
+				name: 'Roller blinds',
+				description: 'Blackout, sunscreen and translucent fabrics, cut to the window.',
+				image: '/images/blinds-roller.jpg',
+				price: 'from ₹90',
+				unit: 'sq ft'
+			},
+			{
+				name: 'Sheers & motorised drapery',
+				description: 'Wave sheers and drapes on silent, remote-driven tracks.',
+				image: '/images/drapery.jpg',
+				price: 'from ₹150',
+				unit: 'sq ft'
+			},
+			{
+				name: 'Frosted & decorative film',
+				description: 'Frosted, patterned and sun-control films, fitted in place.',
+				image: '/images/film-frosted.jpg',
+				price: 'from ₹45',
+				unit: 'sq ft'
+			},
+			{
+				name: 'Custom-branded glass film',
+				description: 'Your mark or pattern, cut and set into office and storefront glass.',
+				image: '/images/film-custom.jpg',
+				price: 'from ₹65',
 				unit: 'sq ft'
 			}
 		]
@@ -194,8 +231,9 @@ export const collections: Collection[] = [
 		slug: 'carpets',
 		title: 'Carpets & Textiles',
 		shortTitle: 'Carpets',
-		layerNo: 'Layer iv',
-		plate: 'Pl. 05 — Carpets & Textiles',
+		layerNo: 'Layer v',
+		plate: 'Pl. 06 — Carpets & Textiles',
+		image: '/images/plate-carpets.jpg',
 		term: '— the soft layer',
 		description:
 			'The final layer, and the one you feel. Warmth, hush and texture that turn a finished room into a lived-in one.',
@@ -205,36 +243,25 @@ export const collections: Collection[] = [
 		darkPlate: true,
 		products: [
 			{
-				name: 'Nylon carpet, matte',
+				name: 'Nylon carpet, fitted',
 				description: 'The house staple — soft, even, everyday. Material and fitting included.',
-				image: '/images/carpet-mats.jpg',
+				image: '/images/carpet-fitted.jpg',
 				price: '₹40',
 				unit: 'sq ft'
 			},
 			{
-				name: 'Designer printed carpet',
-				description: 'Floral, geometric and contemporary patterns, printed deep.',
-				image: '/images/printed-carpet.jpg',
-				price: 'from ₹55',
-				unit: 'sq ft'
-			},
-			{
-				name: 'Carpet tiles',
-				description: 'Modular tiles for offices — replace one, not the room.',
+				name: 'Modular carpet tiles',
+				description: 'Tiles for offices and studios — replace one, not the room.',
 				image: '/images/carpet-tiles.jpg',
 				price: 'from ₹55',
-				unit: 'sq ft'
-			},
-			{
-				name: 'Wall-to-wall & polypropylene',
-				description: 'Full-room rolls in hardwearing fibres for busy floors.',
-				image: '/images/polypropylene.jpg',
-				price: 'from ₹45',
 				unit: 'sq ft'
 			}
 		]
 	}
 ];
+
+export const heroImage = '/images/plate-hero.jpg';
+export const atelierImage = '/images/plate-atelier.jpg';
 
 export const services = [
 	{

@@ -25,6 +25,8 @@
 		<div class="bar-right">
 			<nav class="main" aria-label="Primary">
 				<a href="{base}/collections">{$t('nav.collections', 'Collections')}</a>
+				<a href="{base}/atelier">{$t('nav.atelier', 'The Atelier')}</a>
+				<a href="{base}/#heritage">{$t('nav.heritage', 'Heritage')}</a>
 				<a href="{base}/enquire" class="nav-cta">{$t('nav.enquire', 'Enquire')}</a>
 			</nav>
 			<div class="lang" role="group" aria-label="Language">
@@ -75,6 +77,8 @@
 	</div>
 	<nav class="mobile-nav {menuOpen ? 'open' : ''}" aria-label="Mobile">
 		<a href="{base}/collections" onclick={() => (menuOpen = false)}>{$t('nav.collections', 'Collections')}</a>
+		<a href="{base}/atelier" onclick={() => (menuOpen = false)}>{$t('nav.atelier', 'The Atelier')}</a>
+		<a href="{base}/#heritage" onclick={() => (menuOpen = false)}>{$t('nav.heritage', 'Heritage')}</a>
 		<a href="{base}/enquire" onclick={() => (menuOpen = false)}>{$t('nav.enquire', 'Enquire')}</a>
 	</nav>
 </header>

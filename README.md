@@ -2,8 +2,8 @@
 
 "Surfaces, considered." A SvelteKit + Tailwind site for The Interior Aura, an
 interior-surfaces atelier in Gurugram, India — dark editorial design (ink,
-limewash and bronze; Fraunces + Hanken Grotesk), structured around four surface
-collections: Flooring, Walls, Ceilings, Carpets & Textiles.
+limewash and bronze; Fraunces + Hanken Grotesk), structured around five surface
+collections: Flooring, Walls, Ceilings, Light & Glass, Carpets & Textiles.
 
 ## Tech stack
 
@@ -25,7 +25,7 @@ npm run check    # svelte-check
 
 ## Structure
 
-- `src/lib/data/company.ts` — single source of truth: company facts, the four
+- `src/lib/data/company.ts` — single source of truth: company facts, the five
   collections, every product with its indicative price. Edit copy and prices here.
 - `src/lib/i18n.ts` — language store + DE dictionary
 - `src/lib/actions/reveal.ts` — scroll-reveal action

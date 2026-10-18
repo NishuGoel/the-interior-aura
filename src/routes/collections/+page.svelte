@@ -9,7 +9,7 @@
 	<title>The Collections — The Interior Aura</title>
 	<meta
 		name="description"
-		content="Four surface collections — flooring, walls, ceilings, carpets & textiles — sourced and crafted by hand in Gurugram, India."
+		content="Five surface collections — flooring, walls, ceilings, light & glass, carpets & textiles — sourced and crafted by hand in Gurugram, India."
 	/>
 </svelte:head>
 
@@ -21,7 +21,7 @@
 		<p class="lede">
 			{$t(
 				'rooms.intro',
-				'A considered interior is built outward in layers — the plane underfoot, the walls that frame it, the ceiling few think to dress, and the softness that makes it a home. We make each one, so the layers meet rather than merely coexist.'
+				'A considered interior is built outward in layers — the plane underfoot, the walls that frame it, the ceiling few think to dress, the light that moves through it, and the softness that makes it a home. We make each one, so the layers meet rather than merely coexist.'
 			)}
 		</p>
 	</div>
@@ -34,8 +34,9 @@
 				<div class="entry-media">
 					<a href="{base}/collections/{c.slug}">
 						<div class="plate">
-							<div class="scene {c.scene}" aria-hidden="true"></div>
-							<span class="plno {c.darkPlate ? '' : 'on-light'}">{c.plate}</span>
+							<img class="scene" src="{base}{c.image}" alt={c.title} loading="lazy" />
+							<div class="shade" aria-hidden="true"></div>
+							<span class="plno">{c.plate}</span>
 						</div>
 					</a>
 				</div>

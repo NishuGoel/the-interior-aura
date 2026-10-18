@@ -1161,3 +1161,18 @@ table.compare .from {
 	width: 17px;
 	height: 17px;
 }
+
+/* legibility gradient over photographic plates */
+.plate .shade {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	background: linear-gradient(
+		180deg,
+		rgba(20, 16, 12, 0.38),
+		transparent 28%,
+		transparent 62%,
+		rgba(20, 16, 12, 0.5)
+	);
+	pointer-events: none;
+}

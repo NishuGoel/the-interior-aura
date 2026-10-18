@@ -1,22 +1,22 @@
 # Product Images
 
-Drop product photos into this folder. Each piece on a collection page references a
-specific filename and shows the photo once it exists here (until then, a toned
-"plate" placeholder in the collection's palette is shown).
+All photographs are courtesy of The Interior Aura (Saksham Goel). Files are
+stripped of metadata and resized for the web. The mapping lives in
+`src/lib/data/company.ts` — update the paths there if you rename anything.
 
-Expected filenames (from `src/lib/data/company.ts`):
+## Plates (home & overview pages)
+- `plate-hero.jpg` — hero, Pl. 01
+- `plate-flooring.jpg`, `plate-walls.jpg`, `plate-ceilings.jpg`,
+  `plate-light.jpg`, `plate-carpets.jpg` — collection plates, Pl. 02–06
+- `plate-atelier.jpg` — Pl. 07, the fitting/installation shot
 
-## Flooring
-- `laminate.jpg`, `herringbone.jpg`, `spc-wooden.jpg`, `lvt.jpg`, `deck.jpg`
+## Product cards
+- Flooring: `laminate.jpg`, `herringbone.jpg`, `spc.jpg`, `lvt.jpg`, `deck.jpg`
+- Walls: `wallpaper-designer.jpg`, `wallpaper-custom.jpg`, `panelling.jpg`, `wallpaper-hd.jpg`
+- Ceilings: `ceiling-false.jpg`, `ceiling-feature.jpg`
+- Light & Glass: `blinds-roller.jpg`, `drapery.jpg`, `film-frosted.jpg`, `film-custom.jpg`
+- Carpets: `carpet-fitted.jpg`, `carpet-tiles.jpg`
 
-## Walls
-- `pvc-wallpaper.jpg`, `custom-wallpaper.jpg`, `pvc-panels.jpg`, `hd-wallpaper.jpg`
-
-## Ceilings
-- `pvc-ceiling.jpg`, `wpc-ceiling.jpg`, `false-ceiling.jpg`, `ceiling-grid.jpg`
-
-## Carpets & Textiles
-- `carpet-mats.jpg`, `printed-carpet.jpg`, `carpet-tiles.jpg`, `polypropylene.jpg`
-
-Tip: keep images roughly 4:3 (e.g. 1200×900). Warm, low-key photography suits the
-design — the plates crop with `object-cover`, so exact dimensions are flexible.
+Cards fall back to a toned placeholder if a file is missing. Keep replacements
+roughly landscape (4:3) for cards; plates crop with `object-cover`, so exact
+dimensions are flexible.
