@@ -17,7 +17,7 @@
 	<div class="aura" aria-hidden="true"></div>
 	<div class="wrap">
 		<span class="eyebrow">{$t('rooms.eyebrow', 'The anatomy of a room')}</span>
-		<h1>The <em>collections</em>.</h1>
+		<h1>{$t('colspage.pre', 'The')} <em>{$t('colspage.em', 'collections')}</em>.</h1>
 		<p class="lede">
 			{$t(
 				'rooms.intro',
@@ -36,12 +36,12 @@
 						<div class="plate">
 							<img class="scene" src="{base}{c.image}" alt={c.title} loading="lazy" />
 							<div class="shade" aria-hidden="true"></div>
-							<span class="plno">{c.plate}</span>
+							<span class="plno">{$t(`col.${c.slug}.pl`, c.plate)}</span>
 						</div>
 					</a>
 				</div>
 				<div class="entry-body">
-					<span class="layer-no">{c.layerNo}</span>
+					<span class="layer-no">{$t(`col.${c.slug}.layer`, c.layerNo)}</span>
 					<h3>{$t(`col.${c.slug}.title`, c.title)}</h3>
 					<div class="term">{$t(`col.${c.slug}.term`, c.term)}</div>
 					<p class="desc">{$t(`col.${c.slug}.desc`, c.description)}</p>

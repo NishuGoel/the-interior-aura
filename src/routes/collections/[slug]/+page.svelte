@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { collections } from '$lib/data/company';
-	import { t } from '$lib/i18n';
+	import { t, lang } from '$lib/i18n';
 	import { reveal } from '$lib/actions/reveal';
 
 	let { data } = $props();
@@ -19,7 +19,7 @@
 <section class="page-hero">
 	<div class="aura" aria-hidden="true"></div>
 	<div class="wrap">
-		<span class="eyebrow">{c.layerNo} {$t(`col.${c.slug}.term`, c.term)}</span>
+		<span class="eyebrow">{$t(`col.${c.slug}.layer`, c.layerNo)} {$t(`col.${c.slug}.term`, c.term)}</span>
 		<h1><em>{$t(`col.${c.slug}.title`, c.title)}</em></h1>
 		<p class="lede">{$t(`col.${c.slug}.desc`, c.description)}</p>
 	</div>
@@ -29,7 +29,7 @@
 	<div class="wrap">
 		<div class="layers-head" style="margin-bottom:80px;" use:reveal>
 			<div class="statement">
-				<h2 style="font-size:clamp(30px,3.6vw,48px);">The pieces.</h2>
+				<h2 style="font-size:clamp(30px,3.6vw,48px);">{$t('pieces.h2', 'The pieces.')}</h2>
 			</div>
 			<p class="intro-p" style="border-top:1px solid var(--line-dark); padding-top:18px; font-size:13.5px; letter-spacing:.04em; color:var(--clay);">
 				{$t(`col.${c.slug}.kinds`, c.kinds)}
@@ -52,17 +52,22 @@
 							<div class="scene {c.scene}" aria-hidden="true"></div>
 						{/if}
 					</div>
-					<h4>{p.name}</h4>
-					<p>{p.description}</p>
-					<div class="price">{p.price} / {p.unit}</div>
+					<h4>{$lang === 'de' ? p.nameDe : p.name}</h4>
+					<p>{$lang === 'de' ? p.descriptionDe : p.description}</p>
+					<div class="price">
+						{p.price.startsWith('from ')
+							? `${$t('price.from', 'from')} ${p.price.slice(5)}`
+							: p.price} / {$t(`unit.${p.unit}`, p.unit)}
+					</div>
 				</div>
 			{/each}
 		</div>
 
 		<p class="price-note">
-			Prices are indicative starting rates and settle with design, quality and quantity — we
-			will always quote the room, not the brochure. Samples and measurement at your doorstep,
-			without charge.
+			{$t(
+				'pieces.note',
+				'Prices are indicative starting rates and settle with design, quality and quantity — we will always quote the room, not the brochure. Samples and measurement at your doorstep, without charge.'
+			)}
 		</p>
 
 		<div style="margin-top:70px;">
@@ -73,11 +78,11 @@
 
 <section class="section tight">
 	<div class="wrap">
-		<span class="eyebrow" style="display:block;margin-bottom:34px;">The other layers</span>
+		<span class="eyebrow" style="display:block;margin-bottom:34px;">{$t('other.layers', 'The other layers')}</span>
 		<div style="display:flex; gap:40px 56px; flex-wrap:wrap;">
 			{#each others as o}
 				<a href="{base}/collections/{o.slug}" class="link-more">
-					<span>{o.layerNo} — {$t(`col.${o.slug}.title`, o.title)}</span>
+					<span>{$t(`col.${o.slug}.layer`, o.layerNo)} — {$t(`col.${o.slug}.title`, o.title)}</span>
 					<span class="ln"></span>
 				</a>
 			{/each}

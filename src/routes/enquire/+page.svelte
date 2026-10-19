@@ -68,9 +68,14 @@
 					<p style="margin-top:6px;"><a href="mailto:{company.email}">{company.email}</a></p>
 				</div>
 				<div class="contact-card">
-					<span class="role">Hours</span>
+					<span class="role">{$t('enq.hours', 'Hours')}</span>
 					<h3 style="font-size:18px;">{company.hours}</h3>
-					<p>Doorstep sampling across {company.serviceAreas.join(', ')} — without charge.</p>
+					<p>
+						{$t(
+							'enq.doorstep',
+							`Doorstep sampling across ${company.serviceAreas.join(', ')} — without charge.`
+						)}
+					</p>
 				</div>
 			</div>
 			<div>

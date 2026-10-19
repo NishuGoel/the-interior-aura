@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { company, services } from '$lib/data/company';
-	import { t } from '$lib/i18n';
+	import { t, lang } from '$lib/i18n';
 	import { reveal } from '$lib/actions/reveal';
 </script>
 
@@ -17,7 +17,7 @@
 	<div class="aura" aria-hidden="true"></div>
 	<div class="wrap">
 		<span class="eyebrow">{$t('at.eyebrow', 'The Atelier · Gurugram, India')}</span>
-		<h1>The <em>atelier</em>.</h1>
+		<h1>{$t('atpage.pre', 'The')} <em>{$t('atpage.em', 'atelier')}</em>.</h1>
 		<p class="lede">
 			{$t(
 				'at.p1',
@@ -52,9 +52,10 @@
 					)}
 				</p>
 				<p>
-					Established in {company.established} as a wholesale house for flooring, walls, ceilings
-					and soft layers, we serve {company.serviceAreas.join(', ')} — with samples brought
-					to your door, and every fit finished by our own hands.
+					{$t(
+						'at.p3',
+						`Established in ${company.established} as a wholesale house for flooring, walls, ceilings and soft layers, we serve ${company.serviceAreas.join(', ')} — with samples brought to your door, and every fit finished by our own hands.`
+					)}
 				</p>
 				<div class="marks">
 					<div class="m"><div class="k">2022</div><div class="l">{$t('at.m1', 'Atelier established')}</div></div>
@@ -71,12 +72,14 @@
 	<div class="wrap">
 		<div class="layers-head" style="margin-bottom:80px;" use:reveal>
 			<div class="statement">
-				<span class="eyebrow dim" style="display:block;margin-bottom:18px;">The way we work</span>
-				<h2 style="font-size:clamp(32px,4vw,56px);">Delivered &amp; fitted, with care.</h2>
+				<span class="eyebrow dim" style="display:block;margin-bottom:18px;">{$t('atwork.eyebrow', 'The way we work')}</span>
+				<h2 style="font-size:clamp(32px,4vw,56px);">{$t('atwork.h2', 'Delivered & fitted, with care.')}</h2>
 			</div>
 			<p class="intro-p">
-				A surface is only as good as its fit. Every commission moves through the same hands —
-				from the first doorstep sample to the final finished edge.
+				{$t(
+					'atwork.intro',
+					'A surface is only as good as its fit. Every commission moves through the same hands — from the first doorstep sample to the final finished edge.'
+				)}
 			</p>
 		</div>
 		<div class="pieces" style="grid-template-columns:repeat(3,1fr); gap:44px 28px;">
@@ -85,8 +88,8 @@
 					<span class="layer-no" style="font-family:var(--serif);font-style:italic;color:var(--bronze-d);font-size:15px;">
 						{['i', 'ii', 'iii', 'iv', 'v', 'vi'][i]}.
 					</span>
-					<h4 style="margin-top:8px;">{s.name}</h4>
-					<p>{s.description}</p>
+					<h4 style="margin-top:8px;">{$lang === 'de' ? s.nameDe : s.name}</h4>
+					<p>{$lang === 'de' ? s.descriptionDe : s.description}</p>
 				</div>
 			{/each}
 		</div>
@@ -96,18 +99,18 @@
 <!-- House facts -->
 <section class="section tight">
 	<div class="wrap">
-		<span class="eyebrow" style="display:block;margin-bottom:34px;">The house, on record</span>
+		<span class="eyebrow" style="display:block;margin-bottom:34px;">{$t('atfacts.eyebrow', 'The house, on record')}</span>
 		<div style="max-width:720px;">
 			<div style="display:grid;grid-template-columns:200px 1fr;gap:14px 28px;font-size:14px;color:var(--fg-dim);border-top:1px solid var(--line-soft);padding-top:24px;">
-				<span style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:var(--bronze);">Nature</span>
-				<span>Wholesale house &amp; retailer of interior surfaces</span>
-				<span style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:var(--bronze);">Established</span>
+				<span style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:var(--bronze);">{$t('fact.nature', 'Nature')}</span>
+				<span>{$t('fact.nature.v', 'Wholesale house & retailer of interior surfaces')}</span>
+				<span style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:var(--bronze);">{$t('fact.est', 'Established')}</span>
 				<span>{company.established}</span>
-				<span style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:var(--bronze);">Atelier</span>
+				<span style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:var(--bronze);">{$t('fact.atelier', 'Atelier')}</span>
 				<span>{company.address.full}</span>
 				<span style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:var(--bronze);">GST</span>
 				<span>{company.gst}</span>
-				<span style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:var(--bronze);">Serving</span>
+				<span style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:var(--bronze);">{$t('fact.serving', 'Serving')}</span>
 				<span>{company.serviceAreas.join(' · ')}</span>
 			</div>
 		</div>

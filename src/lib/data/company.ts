@@ -26,7 +26,9 @@ export const company = {
 
 export interface Product {
 	name: string;
+	nameDe: string;
 	description: string;
+	descriptionDe: string;
 	image: string;
 	price: string;
 	unit: string;
@@ -66,38 +68,48 @@ export const collections: Collection[] = [
 		products: [
 			{
 				name: 'Laminate wood',
+				nameDe: 'Laminatparkett',
 				description:
 					'High-density laminate in 8–12 mm — oak, walnut, maple and teak, in straight plank.',
+				descriptionDe: 'Hochdichtes Laminat in 8–12 mm — Eiche, Walnuss, Ahorn und Teak, in gerader Diele.',
 				image: '/images/laminate.jpg',
 				price: 'from ₹75',
 				unit: 'sq ft'
 			},
 			{
 				name: 'Herringbone & chevron',
+				nameDe: 'Fischgrät & Chevron',
 				description: 'Patterned wood flooring, cut and laid for rooms that deserve ceremony.',
+				descriptionDe: 'Gemustertes Holzparkett, zugeschnitten und verlegt für Räume mit Anspruch.',
 				image: '/images/herringbone.jpg',
 				price: 'from ₹120',
 				unit: 'sq ft'
 			},
 			{
 				name: 'SPC stone-composite',
+				nameDe: 'SPC-Steinverbund',
 				description:
 					'Fully waterproof stone-polymer planks with a click-lock fit. Warm underfoot, calm to live with.',
+				descriptionDe: 'Vollständig wasserfeste Stein-Polymer-Dielen mit Klicksystem. Warm unter den Füßen, ruhig im Alltag.',
 				image: '/images/spc.jpg',
 				price: 'from ₹90',
 				unit: 'sq ft'
 			},
 			{
 				name: 'Luxury vinyl tile & plank',
+				nameDe: 'Luxus-Vinyl in Fliese & Diele',
 				description:
 					'Quiet, resilient vinyl in wood and stone readings — for hardworking rooms.',
+				descriptionDe: 'Leises, strapazierfähiges Vinyl in Holz- und Steinoptik — für stark genutzte Räume.',
 				image: '/images/lvt.jpg',
 				price: 'from ₹35',
 				unit: 'sq ft'
 			},
 			{
 				name: 'Deck flooring',
+				nameDe: 'Terrassendielen',
 				description: 'Weathered-in composite decking for balconies, terraces and open air.',
+				descriptionDe: 'Witterungsbeständige Kompositdielen für Balkon, Terrasse und den Außenbereich.',
 				image: '/images/deck.jpg',
 				price: 'from ₹180',
 				unit: 'sq ft'
@@ -121,30 +133,38 @@ export const collections: Collection[] = [
 		products: [
 			{
 				name: 'Designer wallpaper',
+				nameDe: 'Designertapeten',
 				description:
 					'Brand and imported papers — botanical, geometric, jewel-toned. Washable, long-lived.',
+				descriptionDe: 'Marken- und Importtapeten — botanisch, geometrisch, in Juwelentönen. Abwaschbar und langlebig.',
 				image: '/images/wallpaper-designer.jpg',
 				price: 'from ₹1,500',
 				unit: 'roll'
 			},
 			{
 				name: 'Custom-printed murals',
+				nameDe: 'Individuell bedruckte Wandbilder',
 				description: 'Your artwork, photograph or pattern, printed to the exact wall.',
+				descriptionDe: 'Ihr Motiv, Foto oder Muster, passgenau auf die Wand gedruckt.',
 				image: '/images/wallpaper-custom.jpg',
 				price: 'from ₹80',
 				unit: 'sq ft'
 			},
 			{
 				name: 'PVC & WPC panelling',
+				nameDe: 'PVC- & WPC-Paneele',
 				description:
 					'Fluted, louvered and wood-grain panels — moisture-proof and made to meet cleanly.',
+				descriptionDe: 'Geriffelte, Lamellen- und Holzdekor-Paneele — feuchtigkeitsbeständig und sauber gefügt.',
 				image: '/images/panelling.jpg',
 				price: 'from ₹60',
 				unit: 'sq ft'
 			},
 			{
 				name: 'HD & vinyl-backed paper',
+				nameDe: 'HD- & vinylkaschierte Tapeten',
 				description: 'Heavy-duty textured papers for commercial walls and high-touch rooms.',
+				descriptionDe: 'Robuste Strukturtapeten für gewerbliche Wände und stark beanspruchte Räume.',
 				image: '/images/wallpaper-hd.jpg',
 				price: 'from ₹2,200',
 				unit: 'roll'
@@ -167,15 +187,19 @@ export const collections: Collection[] = [
 		products: [
 			{
 				name: 'Decorative false ceilings',
+				nameDe: 'Dekorative abgehängte Decken',
 				description: 'Coves, trays and shadow lines — the quiet architecture overhead.',
+				descriptionDe: 'Voutenlicht, Deckenspiegel und Schattenfugen — die leise Architektur über Ihnen.',
 				image: '/images/ceiling-false.jpg',
 				price: 'from ₹85',
 				unit: 'sq ft'
 			},
 			{
 				name: 'Feature & cove work',
+				nameDe: 'Licht- & Voutendecken',
 				description:
 					'Timber-lined coves and sculpted features, drawn to the room and lit from within.',
+				descriptionDe: 'Holzgefasste Vouten und skulpturale Deckenelemente, auf den Raum gezeichnet und von innen beleuchtet.',
 				image: '/images/ceiling-feature.jpg',
 				price: 'from ₹120',
 				unit: 'sq ft'
@@ -199,14 +223,18 @@ export const collections: Collection[] = [
 		products: [
 			{
 				name: 'Nylon carpet, fitted',
+				nameDe: 'Nylonteppich, verlegt',
 				description: 'The house staple — soft, even, everyday. Material and fitting included.',
+				descriptionDe: 'Der Klassiker des Hauses — weich, gleichmäßig, alltagstauglich. Material und Verlegung inklusive.',
 				image: '/images/carpet-fitted.jpg',
 				price: '₹40',
 				unit: 'sq ft'
 			},
 			{
 				name: 'Modular carpet tiles',
+				nameDe: 'Modulare Teppichfliesen',
 				description: 'Tiles for offices and studios — replace one, not the room.',
+				descriptionDe: 'Fliesen für Büros und Studios — eine austauschen statt den ganzen Raum.',
 				image: '/images/carpet-tiles.jpg',
 				price: 'from ₹55',
 				unit: 'sq ft'
@@ -218,33 +246,59 @@ export const collections: Collection[] = [
 export const heroImage = '/images/plate-hero.jpg';
 export const atelierImage = '/images/plate-atelier.jpg';
 
-export const services = [
+export interface Service {
+	name: string;
+	nameDe: string;
+	description: string;
+	descriptionDe: string;
+}
+
+export const services: Service[] = [
 	{
 		name: 'Doorstep sampling',
+		nameDe: 'Muster an Ihrer Tür',
 		description:
-			'We bring physical samples to your home or office, so you judge the material in the room it will live in.'
+			'We bring physical samples to your home or office, so you judge the material in the room it will live in.',
+		descriptionDe:
+			'Wir bringen physische Muster zu Ihnen nach Hause oder ins Büro — Sie beurteilen das Material im Raum, in dem es leben wird.'
 	},
 	{
 		name: 'Measurement & estimate',
-		description: 'Precise measurement and an honest, all-inclusive estimate before any work begins.'
+		nameDe: 'Aufmaß & Angebot',
+		description:
+			'Precise measurement and an honest, all-inclusive estimate before any work begins.',
+		descriptionDe: 'Präzises Aufmaß und ein ehrliches Komplettangebot, bevor die Arbeit beginnt.'
 	},
 	{
 		name: 'Fitting & installation',
+		nameDe: 'Verlegung & Montage',
 		description:
-			'Flooring, wallpaper, panelling, ceilings, blinds and films — laid and finished by our own hands.'
+			'Flooring, wallpaper, panelling and ceilings — laid and finished by our own hands.',
+		descriptionDe:
+			'Böden, Tapeten, Paneele und Decken — verlegt und vollendet von unseren eigenen Händen.'
 	},
 	{
 		name: 'Custom & bespoke work',
+		nameDe: 'Maßanfertigung',
 		description:
-			'Printed wallpaper from your artwork, feature ceilings, heritage panelling — made to the room.'
+			'Printed wallpaper from your artwork, feature ceilings, heritage panelling — made to the room.',
+		descriptionDe:
+			'Bedruckte Tapeten nach Ihrem Motiv, gestaltete Decken, Heritage-Paneele — gefertigt für den Raum.'
 	},
 	{
 		name: 'Trade & projects',
+		nameDe: 'Handel & Projekte',
 		description:
-			'Supply and fit-out for builders, designers and commercial projects across Delhi NCR.'
+			'Supply and fit-out for builders, designers and commercial projects across Delhi NCR.',
+		descriptionDe:
+			'Lieferung und Ausbau für Bauträger, Planer und Gewerbeprojekte im Raum Delhi NCR.'
 	},
 	{
 		name: 'Aftercare',
-		description: 'Guidance on living with each surface, and repair or refit when you need us again.'
+		nameDe: 'Nachsorge',
+		description:
+			'Guidance on living with each surface, and repair or refit when you need us again.',
+		descriptionDe:
+			'Rat für das Leben mit jeder Oberfläche — und Reparatur oder Neuverlegung, wenn Sie uns wieder brauchen.'
 	}
 ];
